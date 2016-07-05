@@ -19,7 +19,7 @@ import java.net.URISyntaxException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-public class CourseList {
+public class XSLTransform_JAVA {
     public static void main(String[] args) throws IOException, URISyntaxException,
                                                   SAXException, ParserConfigurationException,
                                                   TransformerException {

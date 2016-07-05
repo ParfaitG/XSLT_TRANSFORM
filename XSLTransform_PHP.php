@@ -3,8 +3,8 @@
 // Load the XML source and XSLT file
 $cd = dirname(__FILE__);
 
-$doc1 = new DOMDocument();
-$doc1->load($cd.'/Input.xml');
+$doc = new DOMDocument();
+$doc->load($cd.'/Input.xml');
 
 $xsl = new DOMDocument;
 $xsl->load($cd.'/XSLT_Script.xsl');
@@ -14,7 +14,7 @@ $proc = new XSLTProcessor;
 $proc->importStyleSheet($xsl); 
 
 // Transform XML source
-$newXml = $proc->transformToXML($doc1);
+$newXml = $proc->transformToXML($doc);
 
 // Save output to file
 $xmlfile = $cd.'/Output.xml';

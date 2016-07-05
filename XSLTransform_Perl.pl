@@ -23,5 +23,5 @@ my $results     = $stylesheet->transform($xml_doc);
 my $output      = $stylesheet->output_string($results);
  
 # OUTPUT TO FILE
-my $newxml_file = $dirname."/Output.xml";;
+my $newxml_file = $dirname."/Output.xml";
 $stylesheet->output_file($newxml_file);
