@@ -19,7 +19,11 @@ import java.net.URISyntaxException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
+<<<<<<< HEAD
 public class XSLTransform_JAVA {
+=======
+public class XSLTransform_Java {
+>>>>>>> 26792a84bbc91c5413e766f00a107774efefe78c
     public static void main(String[] args) throws IOException, URISyntaxException,
                                                   SAXException, ParserConfigurationException,
                                                   TransformerException {
