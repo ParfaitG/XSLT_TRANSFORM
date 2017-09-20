@@ -15,10 +15,14 @@ On Error GoTo ErrHandle
             
     MsgBox "Successfully transformed XML!", vbInformation
     Exit Sub
-    
+            
+ExitHandle:
+    Set xmlDoc = Nothing: Set xslDoc = Nothing: Set newDoc = Nothing
+    Exit Sub
+                            
 ErrHandle:
     MsgBox Err.Number & " - " & Err.Description, vbCritical
     Err.Raise xslDoc.parseError.ErrorCode, , xslDoc.parseError.reason
-    Exit Sub
+    Resume ExitHandle
     
 End Sub
