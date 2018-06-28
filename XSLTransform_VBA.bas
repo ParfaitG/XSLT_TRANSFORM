@@ -3,7 +3,7 @@ On Error GoTo ErrHandle
     Dim xmldoc As New MSXML2.DOMDocument, xslDoc As New MSXML2.DOMDocument, newDoc As New MSXML2.DOMDocument
          
     ' LOAD XML AND XSL FILES
-    xslDoc.async = False
+    xmlDoc.async = False
     xmlDoc.Load "C:\Path\To\InputXML.xml"
 
     xslDoc.async = False    
